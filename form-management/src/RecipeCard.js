@@ -8,7 +8,7 @@ const RecipeCard = props => {
       <h5>Technique: {props.recipe.technique}</h5>
       <h5>Ingredients</h5>
       {props.recipe.ingredients.map(ingredient => (
-        <p>{ingredient}</p>
+        <p key={ingredient}>{ingredient}</p>
       ))}
     </div>
   );
