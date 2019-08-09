@@ -4,11 +4,11 @@ import * as Yup from "yup";
 import axios from "axios";
 
 const Login = ({ errors, touched, status }) => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({ username: "", password: "" });
 
   useEffect(() => {
     if (status) {
-      setUser([...user, status]);
+      setUser(status);
     }
   }, [status]);
 

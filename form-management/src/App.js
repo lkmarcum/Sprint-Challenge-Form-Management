@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import FormikLogin from "./Login";
 
 function App() {
   return (
     <div className="App">
-      <h1>Login</h1>
+      <FormikLogin />
     </div>
   );
 }
